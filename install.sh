@@ -50,8 +50,8 @@ rm -f ~/.local/share/nautilus-python/extensions/VSCodeExtension.py
 rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
 
 # Download and install the extension
-echo "Downloading newest version..."
-wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/code-nautilus.py https://raw.githubusercontent.com/harry-cpp/code-nautilus/master/code-nautilus.py
+echo "Copying actual version"
+cp ./code-nautilus.py ~/.local/share/nautilus-python/extensions/code-nautilus.py 
 
 # Restart nautilus
 echo "Restarting nautilus..."
